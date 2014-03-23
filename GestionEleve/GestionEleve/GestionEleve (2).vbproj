@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B119BFE-2D16-458F-93A4-8D1B347C5C99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GestionEleve.My.MyApplication</StartupObject>
+    <RootNamespace>GestionEleve</RootNamespace>
+    <AssemblyName>GestionEleve</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GestionEleve.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GestionEleve.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5A1DDEC6EFEE30F88F0B7AD4FAD7E4F92E1CE3D6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GestionEleve_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnneeScolaire.Designer.vb">
+      <DependentUpon>AnneeScolaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnneeScolaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classe.Designer.vb">
+      <DependentUpon>Classe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.Designer.vb">
+      <DependentUpon>Connection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cours.Designer.vb">
+      <DependentUpon>Cours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DepotDossier.Designer.vb">
+      <DependentUpon>DepotDossier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DepotDossier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCompte.Designer.vb">
+      <DependentUpon>EditCompte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditCompte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eleve.Designer.vb">
+      <DependentUpon>Eleve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eleve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enseignant.Designer.vb">
+      <DependentUpon>Enseignant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen.Designer.vb">
+      <DependentUpon>Examen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Examen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FraisScolaire.Designer.vb">
+      <DependentUpon>FraisScolaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FraisScolaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.vb">
+      <DependentUpon>Load.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="newCompte.Designer.vb">
+      <DependentUpon>newCompte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newCompte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palmares.Designer.vb">
+      <DependentUpon>Palmares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Palmares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Points.Designer.vb">
+      <DependentUpon>Points.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Points.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RapportAnneeScolaire.Designer.vb">
+      <DependentUpon>RapportAnneeScolaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RapportAnneeScolaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RapportEleve.Designer.vb">
+      <DependentUpon>RapportEleve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RapportEleve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RapportEnseignant.Designer.vb">
+      <DependentUpon>RapportEnseignant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RapportEnseignant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherCours.Designer.vb">
+      <DependentUpon>RechercherCours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherCours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherDossier.Designer.vb">
+      <DependentUpon>RechercherDossier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherDossier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherEleve.Designer.vb">
+      <DependentUpon>RechercherEleve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherEleve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherEnseignant.Designer.vb">
+      <DependentUpon>RechercherEnseignant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherEnseignant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestUser.Designer.vb">
+      <DependentUpon>TestUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnneeScolaire.resx">
+      <DependentUpon>AnneeScolaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classe.resx">
+      <DependentUpon>Classe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cours.resx">
+      <DependentUpon>Cours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepotDossier.resx">
+      <DependentUpon>DepotDossier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eleve.resx">
+      <DependentUpon>Eleve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant.resx">
+      <DependentUpon>Enseignant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen.resx">
+      <DependentUpon>Examen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FraisScolaire.resx">
+      <DependentUpon>FraisScolaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCompte.resx">
+      <DependentUpon>newCompte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Palmares.resx">
+      <DependentUpon>Palmares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Points.resx">
+      <DependentUpon>Points.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherCours.resx">
+      <DependentUpon>RechercherCours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherDossier.resx">
+      <DependentUpon>RechercherDossier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherEleve.resx">
+      <DependentUpon>RechercherEleve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherEnseignant.resx">
+      <DependentUpon>RechercherEnseignant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestUser.resx">
+      <DependentUpon>TestUser.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64px-Calculator_Vista_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\320_HomeIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295351136_banker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295351309_emblem-library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295352996_administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295353122_administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295353215_agency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1295374829_desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Att_Teacher copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Delete.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Refresh.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator_Icon_by_Shortie_Bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edu-miscellaneous-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_student_record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listshadow1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log%2520Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad++-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numbers-black-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-contact-list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash Screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-little-kids-walking-toward-school-with-their-lu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-little-kids-walking-toward-school-with-their-lunchboxes-59779684.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\summary-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimeAttendanceIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title form.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-accept-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\chris okkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
